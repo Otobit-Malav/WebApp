@@ -1,0 +1,45 @@
+
+.header{
+    justify-content: space-between;
+
+}
+
+.signup{
+    text-decoration: underline;
+    font-size: small;
+    color: white;
+}
+/* .background{
+    background-color:#aae9ee;   
+} */
+
+.main{
+    display: flex;
+    height: 460px;
+    width:100%
+}   
+
+.forms{
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.text{
+    color:rgb(63, 160, 240);
+    font-size: x-large;
+    font-family: Roboto;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.feild{
+    height:50px;
+    padding:10px;
+    
+}
+
+.photo{
+    height:460px;
+    width: 100%;
+}

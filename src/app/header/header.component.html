@@ -1,0 +1,31 @@
+<mat-toolbar color="primary" class="header">
+    <ng-container >
+        <mat-toolbar-row >
+            <div class="left">
+                <mat-icon>dashboard</mat-icon>
+                <span>Website</span>
+            </div>
+            <div class="right">
+                <span>
+                    <ul>
+                        <li><a [routerLink]="['/home']" class="home" routerLinkActive="active">Home</a></li>
+                        <li><a [routerLink]="['/about']" class="home" routerLinkActive="active">About</a></li>
+                        <li><a [routerLink]="['/contactus']" class="home" routerLinkActive="active">Contact Us</a></li>
+                        <li><a [routerLink]="['/service']" class="home" routerLinkActive="active">service</a></li>
+                    </ul>
+                </span>
+            </div>
+            <div class="last">
+                <span>
+                    <ul>
+                        <li> <a [routerLink]="['/signup']" class="signup" routerLinkActive="active">Signup</a></li>
+                        <li><a [routerLink]="['/login']" class="login" routerLinkActive="active">Login</a></li>
+                    </ul>
+                </span>
+            </div>
+        </mat-toolbar-row>
+    </ng-container>
+</mat-toolbar>
+
+
+

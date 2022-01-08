@@ -1,0 +1,45 @@
+/* .header{
+    display:flex;
+   
+    
+} */
+.login{
+    text-decoration:none;
+    font-size: small;
+    color: white;
+}
+.signup{
+    text-decoration:none;
+    font-size: small;
+    color: white;
+}
+.left{
+    width: 40%;
+}
+
+.right{
+    white-space: nowrap;
+    width:70%;
+    
+}
+.right li{
+    display:inline;
+    padding:20px;
+    font-size: small;
+    font-family:sans-serif;
+}
+
+.last{
+    white-space: nowrap;
+}
+.last li{
+    display:inline;
+    padding:20px;
+    font-size: small;
+    font-family:sans-serif;
+}
+.home{
+    text-decoration:none;
+    font-size: small;
+    color: white;
+}
