@@ -1,9 +1,50 @@
 .background{
     position: relative;
-    padding: 10px 10px 0px 10px;
+    /* padding: 10px 10px 0px 10px; */
     bottom: 0;
     width: 100%;
     
     height: 20%;
     background: #3f51b5;
+    
+}
+
+.main{
+    display: flex;
+}
+.left{
+    width:30%;
+    
+}
+
+.left ul{
+    list-style-type: none;
+    color: white;
+    
+    /* width:100%;
+    height:100% */
+}
+.left li{
+    font-family: sans-serif;
+    
+}
+
+
+
+.center{
+    width:40%;
+   
+    
+}
+
+.center p{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.home{
+    text-decoration:none;
+    font-size: small;
+    color: white;
 }

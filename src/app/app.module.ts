@@ -11,6 +11,7 @@ import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './center/home/home.component';
+import { ModalComponent } from './modal/modal.component';
 
 
 
@@ -20,7 +21,8 @@ import { HomeComponent } from './center/home/home.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ModalComponent
 
   ],
   imports: [

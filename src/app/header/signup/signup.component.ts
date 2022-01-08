@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-signup',
@@ -10,13 +12,23 @@ export class SignupComponent implements OnInit {
 
   signupform: FormGroup
   hide=true
+  // user: any[]=[
+  //   fname:string,
+  //   lname:string,
+  //   emailid:string,
+  //   pass:string
+  // ]
+  fname:string=''
+    lname:string=''
+    emailid:string=''
+    pass:string=''
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router:Router) {
     this.signupform=fb.group({
-      firstname : new FormControl(),
-      lastname : new FormControl(),
-      email: new FormControl(),
-      password: new FormControl(),
+      firstname : ['',[Validators.required, Validators.minLength(1)]],
+      lastname : ['',[Validators.required, Validators.minLength(1)]],
+      email: ['',[Validators.required, Validators.email]],
+      password: ['', Validators.required],
       
     })
    }
@@ -25,8 +37,12 @@ export class SignupComponent implements OnInit {
   }
 
   submitForm(){
-    console.log(this.signupform.value.firstname);
-    
+    if(this.signupform.valid)
+    {
+      localStorage.setItem('user',JSON.stringify(this.signupform.value))
+      this.router.navigate(['/login']);
+    }
+    console.log(this.signupform)
   }
 
 }
